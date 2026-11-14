@@ -1084,20 +1084,6 @@ BlackArch 的核心价值，在于它把大量安全研究工具纳入 Arch Linu
 > **免责声明：**
 > 本文用于网络安全知识学习和合法授权的安全研究。读者应自行确认测试授权、适用法律、工具来源和操作风险。作者不鼓励也不支持任何未经授权的访问、破坏、窃取或干扰行为。
 
-
-# wifiphisher
- sudo pacman -S wifiphisher
- ## 全自动交互式（推荐）
- sudo wifiphisher
- ## 单网卡、不发送deauth踢人（新手练习）
- sudo wifiphisher -nJ -e "TestWiFi"
- ## 指定网卡：wlan1注入，wlan0开AP
- sudo wifiphisher -jI wlan1 -aI wlan0 -t "TestWiFi"
- ## 指定钓鱼模板
- sudo wifiphisher -t "TestWiFi" -T firmware-upgrade
- ## 杀掉干扰进程
- sudo airmon-ng check kill
-
 ## 贡献者
 
 - [@伟佰](https://github.com/daad-weibai) - 项目整理、文档编写与维护
